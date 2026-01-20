@@ -30,15 +30,12 @@ public class LCMCalculator {
         return a;
     }
 
-    // Function to calculate the LCM using the relationship: LCM(a, b) = (|a * b|) / GCD(a, b)
-    public static int calculateLCM(int a, int b) {
-        if (a == 0 || b == 0) {
-            return 0;
-        }
-        // Use long to prevent potential overflow when multiplying a and b
-        long gcd = calculateGCD(Math.abs(a), Math.abs(b));
-        long lcm = (long) Math.abs(a * b) / gcd;
-        return (int) lcm;
-    }
+ # A simple program to greet a user
+name = "Alice" # A string variable
+age = 30      # An integer variable
+
+print("Hello, " + name + "!") # Prints "Hello, Alice!"
+print("You are", age, "years old.") # Prints "You are 30 years old."
+
 }
 }
